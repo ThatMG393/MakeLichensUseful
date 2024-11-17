@@ -19,7 +19,7 @@ public class SpiderEntityMixin {
 	public void preventClimbing(CallbackInfoReturnable<Boolean> cir) {
 		SpiderEntity spider = (SpiderEntity) (Object) this;
 		if (spider.getWorld().getBlockState(spider.getBlockPos()).isIn(MakeLichensUseful.SPIDER_UNCLIMBABLE)) {
-            cir.setReturnValue(false);
-        }
+			cir.setReturnValue(false);
+		}
 	}
 }
