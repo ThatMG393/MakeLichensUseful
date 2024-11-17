@@ -3,32 +3,26 @@
 	"id": "mlu",
 	"version": "${version}",
 	"name": "MakeLichensUseful",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Makes glow lichens useful by making them a non spider climable block.",
 	"authors": [
-		"Me!"
+		"ThatMG393"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/ThatMG393/MakeLichensUseful",
+		"sources": "https://github.com/ThatMG393/MakeLichensUseful",
+		"issues": "https://github.com/ThatMG393/MakeLichensUseful/issues"
 	},
-	"license": "CC0-1.0",
+	"license": "ARR",
 	"icon": "assets/mlu/icon.png",
-	"environment": "*",
+	"environment": "server",
 	"entrypoints": {
-		"main": [
-			"com.thatmg393.mlu.MakeLichensUseful"
-		]
+		"main": [ "com.thatmg393.mlu.MakeLichensUseful" ],
+		"fabric-datagen": [ "com.thatmg393.mlu.datagen.MakeLichensUsefulDataGenerator" ]
 	},
-	"mixins": [
-		"mlu.mixins.json"
-	],
+	"mixins": [ "mlu.mixins.json" ],
 	"depends": {
 		"fabricloader": ">=0.16.9",
-		"minecraft": "~1.21.1",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"minecraft": ">=1.17",
+		"java": ">=21"
 	}
 }
