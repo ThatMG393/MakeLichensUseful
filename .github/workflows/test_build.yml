@@ -4,7 +4,7 @@
 # against bad commits.
 
 name: Publish to Modrinth
-on: workflow_dispatch
+on: [ push, pull_request, workflow_dispatch ]
 
 jobs:
   build:
