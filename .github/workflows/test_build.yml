@@ -3,8 +3,16 @@
 # certain platforms or Java versions, and provides a first line of defence
 # against bad commits.
 
-name: Publish to Modrinth
-on: [ push, pull_request, workflow_dispatch ]
+name: Test Builds
+on: 
+  push:
+    paths-ignore:
+      - '**.md'
+      - '.gitpod*'
+      - 'Dockerfile'
+      - '.git*'
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
