@@ -7,8 +7,3 @@ RUN sudo apt-get update \
 RUN sudo rm -rf /var/cache/apt/* \
     && sudo rm -rf /var/lib/apt/lists/* \
     && sudo rm -rf /tmp/*
-
-RUN bash -c \
-    "rm -rf ~/.sdkman && curl -s 'https://get.sdkman.io' | bash \
-    && source /home/gitpod/.sdkman/bin/sdkman-init.sh \
-    && sdk install java 21.0.5-graal"
