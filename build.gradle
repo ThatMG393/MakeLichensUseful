@@ -57,8 +57,6 @@ modrinth {
 	uploadFile = remapJar
 	syncBodyFrom = rootProject.file("README.md").text
 
-	debugMode = true
-
 	dependencies { }
 }
 
