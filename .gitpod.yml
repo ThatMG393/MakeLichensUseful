@@ -1,0 +1,19 @@
+image:
+  file: .gitpod/Dockerfile
+
+tasks:
+  - name: Install GraalJVM 21.0.5
+    command: |
+       bash -c "rm -rf ~/.sdkman && curl -s 'https://get.sdkman.io' | bash && source /home/gitpod/.sdkman/bin/sdkman-init.sh && sdk install java 21.0.5-graal"
+
+  - name: Setup VSCode Debugging
+    command: ./gradlew vscode
+
+ports:
+  - port: 6080
+    visibility: private
+    name: Desktop
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-pack
