@@ -12,4 +12,4 @@ Makes glow lichens useful by making them a non spider climable block.
 
 You can make any block unclimable as long as the block has a tag `"minecraft:spider_unclimbable"`.
 
-This makes it useful for other mods to mark their block unclimable as long as this mod is installed.
+This makes it useful for other mods or even you to mark a block unclimable as long as this mod is installed.
